@@ -8,7 +8,7 @@ const cors = require("cors");
 
 const app = express();
 const corsOptions = {
-  origin: [`${process.env.mongodbURL}`, "https://example.com"],
+  origin: [`https://frontend-ochre-beta.vercel.app/`, "https://example.com"],
   methods: ["GET", "POST", "PUT", "DELETE"],
   allowedHeaders: ["Content-Type", "Authorization"],
   credentials: true,
